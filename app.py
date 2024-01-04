@@ -10,8 +10,6 @@ app = Flask(__name__)
 with open('Model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open('Scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
 
 # Define the route for the home page
 @app.route('/')
